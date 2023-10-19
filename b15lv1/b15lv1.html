@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhập các phần tử trong mảng')
+  let arr =[]
+  if(Number.isInteger(n)){
+    if(n>0){
+      for (let i = 0; i < n; i++) {
+        let value = +prompt('nhập giá trị của phần tử ' + '[arr' + i + ']')
+        arr.push(value);
+      }
+    }
+  }
+  let a=0
+  for (let j = 1; j < arr.length; j++) {
+    if(arr[j-1] > arr[j]){
+        a+=1;
+    }
+    else{
+        a+=0;
+    }
+    }
+  if (a==0){
+      document.write('mảng tăng dần')
+  }
+  else {
+      document.write('mảng không tăng dần')
+  }
+
+
+</script>
+</body>
+</html>

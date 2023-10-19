@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt('nhập số A');
+    let b = +prompt('nhập số B');
+    let c = +prompt('nhập số C');
+    let arr = [];
+    for (let i = a; i <=a+2; i++) {
+        for (let j = a; j <= a+2; j++) {
+            for (let k = a; k <=a; k++) {
+                if((i!=j) && (j!=k) && (k!=i)){
+                    arr.push(Number(i.toString()+j.toString()+k.toString()))
+                }
+            }
+        }
+    }
+    console.log(arr)
+</script>
+</body>
+</html>

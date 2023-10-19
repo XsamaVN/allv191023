@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhập số phần tử của mảng')
+  let  arr = []
+
+  for (let i = 0; i < n; i++) {
+    let a = +prompt(`nhập phần tử arr[${i}]`)
+    arr.push(a)
+  }
+  let tongChan = 0;
+  let tongLe= 0;
+  for (let j = 0; j < arr.length; j++) {
+    if(arr[j]%2==0){
+      tongChan+=arr[j]
+    }
+    if(arr[j]%2==1){
+      tongLe+=arr[j]
+    }
+  }
+  document.write(`mang: ${arr} <br>`)
+  if(tongChan>tongLe){
+    document.write(`tong chan lon hon tong le <br>`)
+  }
+  else if(tongChan<tongLe){
+    document.write(`tong le lon hon tong chan <br>`)
+  }
+  else {
+      document.write(`tong chan bang tong le <br>`)
+  }
+</script>
+</body>
+</html>

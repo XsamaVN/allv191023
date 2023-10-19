@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhập số phần tử của mảng')
+  let  arr = []
+  let mangViTriAm=[]
+  let viTri=-1
+  for (let i = 0; i < n; i++) {
+    let a = +prompt(`nhập phần tử arr[${i}]`)
+    arr.push(a)
+  }
+  for (let j = 0; j < arr.length; j++) {
+    if(arr[j]<0){
+      viTri = j
+      mangViTriAm.push(j)
+    }
+  }
+  document.write(`mang: ${arr} <br>`)
+  document.write(`vi tri cua cac gia tri am: ${mangViTriAm.join(',')}`)
+</script>
+</body>
+</html>

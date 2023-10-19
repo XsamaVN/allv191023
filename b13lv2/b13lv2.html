@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhập số phần tử của mảng')
+  let  arr = []
+
+  for (let i = 0; i < n; i++) {
+    let a = +prompt(`nhập phần tử arr[${i}]`)
+    arr.push(a)
+  }
+  document.write(`mang: ${arr} <br>`)
+   arr.sort((a,b)=> a-b)
+  document.write(`Gia tri lon thu hai cua mang: ${arr[n-2]}`)
+</script>
+</body>
+</html>

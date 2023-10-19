@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soNhom = +prompt('nhập số nhóm');
+    let soNguoiMoiNhom = []
+    for (let i = 0; i < soNhom; i++) {
+        let a = +prompt('Nhập số người của nhóm '+(i+1))
+        soNguoiMoiNhom.push(a)
+    }
+    let tongSoNguoi = 0
+    for (let j = 0; j < soNguoiMoiNhom.length; j++) {
+        tongSoNguoi+=soNguoiMoiNhom[j];
+    }
+    alert('số bánh chưng tối thiểu để chia: '+ (Math.ceil(tongSoNguoi/4)))
+</script>
+
+</body>
+</html>

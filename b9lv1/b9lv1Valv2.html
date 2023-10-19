@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dem = 0
+    let arr = []
+
+    for (let motNghin = 0; motNghin <= 20000; motNghin = motNghin + 1000) {
+        for (let haiNghin = 0; haiNghin <= 20000; haiNghin = haiNghin + 2000) {
+            for (let namNghin = 0; namNghin <= 20000; namNghin = namNghin + 5000) {
+                if ((motNghin + haiNghin + namNghin) == 20000) {
+                    arr.push([motNghin / 1000 ,haiNghin / 2000, namNghin / 5000])
+                    dem++
+                }
+            }
+        }
+    }
+    console.log(arr)
+    console.log('số trường hợp: ' + dem)
+    let min = 20
+    let tong = 0
+    for (let i = 0; i < arr.length; i++) {
+        tong = arr[i][0]+arr[i][1]+arr[i][2]
+        if(min > tong){
+            min = tong;
+        }
+    }
+    console.log('Truong hop dung it to tien nhat' + min)
+
+
+</script>
+</body>
+</html>

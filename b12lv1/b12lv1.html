@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let n = +prompt('nhập số phần tử của mảng')
+  let  arr = []
+
+  for (let i = 0; i < n; i++) {
+    let a = +prompt(`nhập phần tử arr[${i}]`)
+    arr.push(a)
+  }
+  let tong = 0;
+  for (let j = 0; j < arr.length; j++) {
+    if(j%2==1){
+      tong+=arr[j]
+
+    }
+  }
+  document.write(`mang: ${arr} <br>`)
+  document.write(`tong cac phan tu co vi tri le: ${tong}`)
+</script>
+</body>
+</html>
